@@ -52,33 +52,6 @@ O site é totalmente responsivo e otimizado para:
 - 💻 Tablet (768px - 992px)
 - 🖥️ Desktop (> 992px)
 
-## 🔧 Como Usar
-
-### Desenvolvimento Local
-
-```bash
-# Clone o repositório
-git clone https://github.com/pvmambembe31/tell-me-you-2026.git
-
-# Entre na pasta
-cd tell-me-you-2026
-
-# Inicie um servidor local
-python3 -m http.server 8000
-
-# Acesse no navegador
-http://localhost:8000
-```
-
-### Deploy
-
-O site é estático e pode ser hospedado em:
-- GitHub Pages
-- Netlify
-- Vercel
-- Hostinger
-- Qualquer servidor web
-
 ## 📊 Estrutura de Arquivos
 
 ```
@@ -115,14 +88,12 @@ tell-me-you-2026/
 
 ## 📞 Contato
 
-- **Email:** contato@tellmeyou.com.br
-- **WhatsApp:** (11) 99999-9999
+- **Email:** serzedellosolucoes@gmail.com.br
 - **Instagram:** [@tellmeyou](https://instagram.com/tellmeyou)
-- **Endereço:** Av. Paulista, 1000 - São Paulo, SP
 
 ## 📝 Licença
 
-© 2026 Tell Me You. Todos os direitos reservados.
+© 2024 Tell Me You. Todos os direitos reservados.
 
 ---
 
