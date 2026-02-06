@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agende sua aula experimental gratuita com Tell Me You. Experimente o método TMY sem compromisso.">
+    <title>Tell Me You - Aula Experimental Gratuita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-area">
+            <img src="assets/logo.jpg" alt="Logo TMY" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">🏠 Início</a>
+            <a href="character.html" class="nav-item">👩‍🏫 Sobre a Teacher</a>
+            <a href="methodology.html" class="nav-item">📖 Metodologia</a>
+            <a href="map.html" class="nav-item">🗺️ Sua Jornada</a>
+            <a href="inventory.html" class="nav-item">🎒 Inventário</a>
+            <a href="faq.html" class="nav-item">❓ FAQ</a>
+            <a href="contact.html" class="nav-item">📧 Contato</a>
+            <a href="join.html" class="nav-item highlight">✨ Matrícula</a>
+        </div>
+    </nav>
+
+    <main>
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h1 class="title-shadow">Aula Experimental <span class="highlight">Gratuita</span></h1>
+            <p>Experimente o método TMY na prática. Sem compromisso, sem custo.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+            
+            <!-- Informações sobre a aula -->
+            <div>
+                <div class="card-glass" style="margin-bottom: 30px;">
+                    <h2 style="color: var(--magenta); margin-bottom: 25px;">O que você vai experimentar:</h2>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div style="min-width: 40px; height: 40px; background: var(--magenta); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🎯</div>
+                            <div>
+                                <h4 style="margin: 0 0 10px; color: var(--text-light);">Diagnóstico Personalizado</h4>
+                                <p style="margin: 0; color: var(--text-dim);">Avaliamos seu nível atual e identificamos seus bloqueios específicos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div style="min-width: 40px; height: 40px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">💬</div>
+                            <div>
+                                <h4 style="margin: 0 0 10px; color: var(--text-light);">Método TMY na Prática</h4>
+                                <p style="margin: 0; color: var(--text-dim);">Você experimenta uma aula real com nossa metodologia exclusiva.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div style="min-width: 40px; height: 40px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">📋</div>
+                            <div>
+                                <h4 style="margin: 0 0 10px; color: var(--text-light);">Plano de Estudos</h4>
+                                <p style="margin: 0; color: var(--text-dim);">Recebe um roadmap personalizado para sua jornada de fluência.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 0;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div style="min-width: 40px; height: 40px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">⏱️</div>
+                            <div>
+                                <h4 style="margin: 0 0 10px; color: var(--text-light);">30 Minutos de Imersão</h4>
+                                <p style="margin: 0; color: var(--text-dim);">Tempo suficiente para você sentir a diferença do método TMY.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-glass" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-main)); border: 2px solid var(--magenta);">
+                    <h3 style="color: var(--gold); margin-bottom: 20px;">🎁 Bônus Exclusivo</h3>
+                    <p style="color: var(--text-light); margin-bottom: 15px;">Ao agendar sua aula experimental, você ganha:</p>
+                    <ul style="color: var(--text-dim); line-height: 2;">
+                        <li>✅ E-book "10 Erros que Travam Sua Fluência"</li>
+                        <li>✅ Checklist de Pronúncia em PDF</li>
+                        <li>✅ Acesso ao grupo VIP de dicas no WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Formulário de Agendamento -->
+            <div class="card-glass">
+                <h2 style="color: var(--magenta); margin-bottom: 25px;">Agende Agora</h2>
+                
+                <form class="contact-form" id="trialForm" style="margin: 0;">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level">Qual seu nível de inglês? *</label>
+                        <select id="level" name="level" required>
+                            <option value="">Selecione seu nível</option>
+                            <option value="beginner">Iniciante (pouco ou nenhum conhecimento)</option>
+                            <option value="elementary">Básico (sei o básico, mas travo)</option>
+                            <option value="intermediate">Intermediário (entendo, mas não falo bem)</option>
+                            <option value="advanced">Avançado (quero refinar e ganhar fluência)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal">Qual seu principal objetivo? *</label>
+                        <select id="goal" name="goal" required>
+                            <option value="">Selecione um objetivo</option>
+                            <option value="work">Melhorar no trabalho/carreira</option>
+                            <option value="travel">Viajar com confiança</option>
+                            <option value="study">Estudar no exterior</option>
+                            <option value="exam">Passar em exames (TOEFL, IELTS)</option>
+                            <option value="personal">Desenvolvimento pessoal</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preference">Preferência de horário:</label>
+                        <select id="preference" name="preference">
+                            <option value="">Selecione um período</option>
+                            <option value="morning">Manhã (9h - 12h)</option>
+                            <option value="afternoon">Tarde (13h - 17h)</option>
+                            <option value="evening">Noite (18h - 21h)</option>
+                            <option value="flexible">Horário flexível</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Observações (opcional):</label>
+                        <textarea id="notes" name="notes" placeholder="Alguma informação adicional que gostaria de compartilhar?" style="min-height: 100px;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px; font-size: 1.1rem;">
+                        🚀 Agendar Minha Aula Grátis
+                    </button>
+                    
+                    <p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 20px; text-align: center;">
+                        Entraremos em contato em até 24h para confirmar o melhor horário.
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Depoimentos Rápidos -->
+        <div class="card-glass" style="padding: 50px; text-align: center;">
+            <h2 class="title-shadow" style="margin-bottom: 40px;">O Que Dizem Sobre a <span class="highlight">Aula Experimental</span></h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div>
+                    <div style="font-size: 2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; color: var(--text-light); margin-bottom: 15px;">"A aula experimental já me mostrou onde eu estava errando há anos!"</p>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">- Juliana M.</p>
+                </div>
+                
+                <div>
+                    <div style="font-size: 2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; color: var(--text-light); margin-bottom: 15px;">"Nunca imaginei que uma aula de 30 minutos pudesse ser tão transformadora."</p>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">- Carlos R.</p>
+                </div>
+                
+                <div>
+                    <div style="font-size: 2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; color: var(--text-light); margin-bottom: 15px;">"Me matriculei na hora! Melhor decisão que tomei."</p>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">- Patricia L.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Rápido -->
+        <div style="max-width: 800px; margin: 60px auto;">
+            <h2 class="title-shadow" style="text-align: center; margin-bottom: 40px;">Dúvidas <span class="highlight">Frequentes</span></h2>
+            
+            <div class="card-glass" style="padding: 30px;">
+                <h4 style="color: var(--text-light); margin-bottom: 10px;">A aula experimental é realmente gratuita?</h4>
+                <p style="color: var(--text-dim); margin-bottom: 25px;">Sim! É 100% gratuita e sem compromisso. Queremos que você conheça o método TMY antes de tomar qualquer decisão.</p>
+                
+                <h4 style="color: var(--text-light); margin-bottom: 10px;">Preciso ter conhecimento prévio de inglês?</h4>
+                <p style="color: var(--text-dim); margin-bottom: 25px;">Não! A aula experimental é adaptada para todos os níveis, desde iniciantes até avançados.</p>
+                
+                <h4 style="color: var(--text-light); margin-bottom: 10px;">A aula é online ou presencial?</h4>
+                <p style="color: var(--text-dim); margin-bottom: 25px;">Você escolhe! Oferecemos ambas as opções. Basta indicar sua preferência no formulário.</p>
+                
+                <h4 style="color: var(--text-light); margin-bottom: 10px;">Sou obrigado a me matricular depois?</h4>
+                <p style="color: var(--text-dim); margin-bottom: 0;">Absolutamente não! A aula experimental é sem compromisso. Você só se matricula se realmente sentir que o método TMY é para você.</p>
+            </div>
+        </div>
+
+        <!-- CTA Final -->
+        <div class="card-glass" style="text-align: center; padding: 50px 40px; margin: 60px auto; max-width: 700px; background: linear-gradient(135deg, var(--magenta), var(--blue));">
+            <h2 style="color: white; margin-bottom: 20px;">Prefere Agendar pelo WhatsApp?</h2>
+            <p style="color: white; opacity: 0.9; margin-bottom: 30px;">Clique no botão abaixo e fale diretamente conosco!</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma aula experimental gratuita." class="btn-primary" target="_blank" rel="noopener" style="background: white; color: var(--magenta);">
+                <span style="font-size: 1.2rem; margin-right: 10px;">💬</span> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tell Me You</h3>
+                <p>Desbloqueando fluência em inglês através de métodos inovadores e personalizados.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/tellmeyou" class="social-icon" target="_blank" rel="noopener">📷</a>
+                    <a href="https://facebook.com/tellmeyou" class="social-icon" target="_blank" rel="noopener">📘</a>
+                    <a href="https://linkedin.com/company/tellmeyou" class="social-icon" target="_blank" rel="noopener">💼</a>
+                    <a href="https://youtube.com/@tellmeyou" class="social-icon" target="_blank" rel="noopener">▶️</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="index.html">Início</a>
+                <a href="character.html">Sobre a Teacher</a>
+                <a href="methodology.html">Metodologia</a>
+                <a href="map.html">Sua Jornada</a>
+                <a href="inventory.html">Inventário</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Suporte</h3>
+                <a href="faq.html">Perguntas Frequentes</a>
+                <a href="contact.html">Contato</a>
+                <a href="trial-class.html">Aula Experimental</a>
+                <a href="join.html">Matrícula</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📧 contato@tellmeyou.com.br</p>
+                <p>📱 (11) 99999-9999</p>
+                <p>📍 São Paulo, SP - Brasil</p>
+                <p>🕐 Seg-Sex: 9h às 18h</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tell Me You. Todos os direitos reservados. | <a href="#" style="color: var(--text-dim);">Política de Privacidade</a> | <a href="#" style="color: var(--text-dim);">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o curso de inglês Tell Me You." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

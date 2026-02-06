@@ -64,7 +64,68 @@ document.addEventListener('DOMContentLoaded', () => {
         mapSteps[0].click();
     }
 
-    // --- 3. ANIMAÇÃO DE SCROLL (Nova Aba Metodologia) ---
+    // --- 3. ACCORDION FAQ ---
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Fecha outros itens (opcional - remova se quiser múltiplos abertos)
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle do item clicado
+                item.classList.toggle('active');
+            });
+        });
+    }
+
+    // --- 4. FORMULÁRIOS ---
+    const contactForm = document.getElementById('contactForm');
+    const trialForm = document.getElementById('trialForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Coleta os dados do formulário
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Simula envio (em produção, conectar com backend)
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            contactForm.reset();
+            
+            // Opcional: Redirecionar para WhatsApp
+            const message = `Olá! Meu nome é ${data.name}. ${data.message}`;
+            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+            // window.open(whatsappUrl, '_blank');
+        });
+    }
+    
+    if (trialForm) {
+        trialForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(trialForm);
+            const data = Object.fromEntries(formData);
+            
+            // Redireciona para WhatsApp com dados pré-preenchidos
+            const message = `Olá! Gostaria de agendar uma aula experimental gratuita.\n\nNome: ${data.name}\nEmail: ${data.email}\nWhatsApp: ${data.phone}\nNível: ${data.level}\nObjetivo: ${data.goal}\nPreferência de horário: ${data.preference || 'Flexível'}`;
+            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            alert('Redirecionando para o WhatsApp...');
+            trialForm.reset();
+        });
+    }
+
+    // --- 5. ANIMAÇÃO DE SCROLL (Nova Aba Metodologia) ---
     // Usa IntersectionObserver para detectar quando os blocos entram na tela
     const roadBlocks = document.querySelectorAll('.road-block');
 
