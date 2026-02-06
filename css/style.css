@@ -1,17 +1,20 @@
 /* --- FONTES --- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@700;900&display=swap');
 
-/* --- VARIÁVEIS DE COR (Paleta Azul, Roxo e Branco) --- */
+/* --- VARIÁVEIS DE COR (Paleta Azul, Roxo, Branco e Magenta) --- */
 :root {
     --bg-main: #FFFFFF;          /* Branco principal */
     --bg-secondary: #F8F9FA;     /* Cinza muito claro */
     --bg-card: #FFFFFF;          /* Branco para cards */
     --primary-blue: #0065BD;     /* Azul principal */
     --primary-purple: #6B46C1;   /* Roxo principal */
+    --primary-magenta: #E6007E;  /* Magenta para destaques */
     --light-blue: #E6F2FF;       /* Azul claro para backgrounds */
     --light-purple: #F3EFFF;     /* Roxo claro para backgrounds */
+    --light-magenta: #FFE6F3;    /* Magenta claro para backgrounds */
     --accent-blue: #0052A3;      /* Azul escuro para hover */
     --accent-purple: #553C9A;    /* Roxo escuro para hover */
+    --accent-magenta: #C2005E;   /* Magenta escuro para hover */
     --text-dark: #1A202C;        /* Texto escuro principal */
     --text-medium: #4A5568;      /* Texto médio */
     --text-light: #718096;       /* Texto claro */
@@ -47,6 +50,7 @@ h1, h2, h3, h4 {
 
 .highlight { color: var(--primary-blue); }
 .highlight-purple { color: var(--primary-purple); }
+.highlight-magenta { color: var(--primary-magenta); }
 
 /* --- CURSOR DOURADO E RASTRO DE ESTRELAS --- */
 .cursor-arrow {
@@ -260,6 +264,7 @@ p { line-height: 1.7; color: var(--text-medium); margin-bottom: 1.5rem;}
     position: absolute; left: 50%; top: 0; bottom: 0;
     width: 8px; background: rgba(255,255,255,0.1);
     transform: translateX(-50%); border-radius: 10px;
+    z-index: 0; /* Fica atrás do conteúdo */
 }
 .road-line::after {
     content: ''; position: absolute; left: 50%; top: 0; bottom: 0;
@@ -270,6 +275,8 @@ p { line-height: 1.7; color: var(--text-medium); margin-bottom: 1.5rem;}
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 100px; opacity: 0; /* Começa invisível para animação */
     transform: translateY(50px); transition: 0.8s ease-out;
+    position: relative;
+    z-index: 1; /* Fica na frente da estrada */
 }
 .road-block.visible { opacity: 1; transform: translateY(0); }
 .road-content, .road-image { width: 42%; }
