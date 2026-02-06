@@ -29,7 +29,6 @@ body {
     background-image: linear-gradient(135deg, var(--light-blue) 0%, var(--bg-main) 50%, var(--light-purple) 100%);
     color: var(--text-dark);
     font-family: 'Montserrat', sans-serif;
-    display: flex;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -136,13 +135,7 @@ h1, h2, h3, h4 {
 main {
     margin-left: 260px;
     padding: 50px;
-    width: calc(100% - 260px);
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: 260px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
 }
 
 /* --- COMPONENTES GERAIS --- */
@@ -324,8 +317,7 @@ footer {
     border-top: none;
     padding: 60px 50px 30px;
     margin-left: 260px;
-    margin-top: 80px;
-    width: calc(100% - 260px);
+    clear: both;
 }
 
 .footer-content {
