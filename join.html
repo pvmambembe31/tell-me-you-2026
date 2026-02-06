@@ -3,43 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tell Me You - Entrar</title>
+    <title>Tell Me You - Matrícula</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor"></div>
-
     <nav class="sidebar">
         <div class="logo-area">
             <img src="assets/logo.jpg" alt="Logo TMY" class="logo-img">
-            <h3>Tell Me You</h3>
         </div>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">Start</a>
-            <a href="character.html" class="nav-item">The Character</a>
-            <a href="map.html" class="nav-item">The Map</a>
-            <a href="inventory.html" class="nav-item">Inventory</a>
-            <a href="join.html" class="nav-item active">Join Guild</a>
+            <a href="index.html" class="nav-item">Início</a>
+            <a href="character.html" class="nav-item">Sobre a Teacher</a>
+            <a href="methodology.html" class="nav-item">Metodologia</a>
+            <a href="map.html" class="nav-item">Sua Jornada</a>
+            <a href="inventory.html" class="nav-item">Inventário</a>
+            <a href="join.html" class="nav-item active highlight">Matrícula</a>
         </div>
     </nav>
 
     <main>
-        <div style="text-align: center; margin-top: 50px;">
-            <h1>Entre para a <span class="highlight">Guilda</span></h1>
-            <p>Vagas abertas para a turma de 2026.</p>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1 class="title-shadow">Escolha seu <span class="highlight">Poder</span></h1>
+            <p>Invista em você. O retorno da fluência é vitalício.</p>
+        </div>
+
+        <div class="packages-grid">
             
-            <div style="background: white; max-width: 400px; margin: 40px auto; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 2px solid var(--blue);">
-                <h3>Plano Completo</h3>
-                <h1 style="font-size: 3rem; margin: 20px 0;">R$ 97<span style="font-size: 1rem;">/mês</span></h1>
-                <ul style="list-style: none; text-align: left; margin-bottom: 30px; line-height: 2;">
-                    <li>✅ Acesso total ao Mapa</li>
-                    <li>✅ Inventário Completo</li>
-                    <li>✅ Suporte via WhatsApp</li>
+            <div class="package-card">
+                <h3>Pacote Boost</h3>
+                <p style="font-size: 0.9rem;">Para quem precisa de um empurrão rápido.</p>
+                <div class="price-box">
+                    <span class="currency">R$</span><span class="amount">197</span><span>/mês</span>
+                </div>
+                <ul class="package-features">
+                    <li>✅ Acesso à Plataforma Gravada</li>
+                    <li>✅ Inventário Básico (PDFs)</li>
+                    <li>❌ Sem Aulas Ao Vivo</li>
                 </ul>
-                <a href="#" class="btn-primary" style="width: 100%;">Quero minha vaga</a>
-                <p style="margin-top: 15px; font-size: 0.8rem; color: #888;">Garantia de 7 dias incondicional.</p>
+                <a href="#" class="btn-secondary" style="width:100%; margin-top: 20px;">Selecionar</a>
             </div>
+
+            <div class="package-card">
+                <h3>Pacote Community</h3>
+                <p style="font-size: 0.9rem;">Aprenda em grupo e troque experiências.</p>
+                <div class="price-box">
+                    <span class="currency">R$</span><span class="amount">297</span><span>/mês</span>
+                </div>
+                <ul class="package-features">
+                    <li>✅ Tudo do Boost</li>
+                    <li>✅ 1 Aula em Grupo Semanal</li>
+                    <li>✅ Grupo de WhatsApp dos Alunos</li>
+                </ul>
+                <a href="#" class="btn-secondary" style="width:100%; margin-top: 20px;">Selecionar</a>
+            </div>
+
+            <div class="package-card" style="border-color: var(--blue);">
+                <h3>Pacote Flex Pass</h3>
+                <p style="font-size: 0.9rem;">Liberdade para agendar quando puder.</p>
+                <div class="price-box">
+                    <span class="currency">R$</span><span class="amount">450</span><span>/mês</span>
+                </div>
+                <ul class="package-features">
+                    <li>✅ Acesso Total à Plataforma</li>
+                    <li>✅ 4 Créditos de Aula Particular/mês</li>
+                    <li>✅ Agendamento Flexível 24h antes</li>
+                </ul>
+                <a href="#" class="btn-primary" style="width:100%; margin-top: 20px; background: var(--blue);">Selecionar</a>
+            </div>
+
+             <div class="package-card featured">
+                <div class="badge-gold">MAIS VENDIDO</div>
+                <h3 class="highlight-gold" style="font-size: 1.8rem;">Pacote Premium</h3>
+                <p style="color: var(--text-light);">A experiência TMY definitiva. Mentoria.</p>
+                <div class="price-box">
+                    <span class="currency" style="color:var(--gold)">R$</span><span class="amount" style="color:var(--gold)">897</span><span>/mês</span>
+                </div>
+                <ul class="package-features" style="text-align: left; display: inline-block; margin-top: 20px;">
+                    <li>🌟 2 Aulas Particulares por Semana</li>
+                    <li>🌟 Suporte Direto no WhatsApp da Teacher</li>
+                    <li>🌟 Correção de E-mails/Trabalhos Profissionais</li>
+                    <li>🌟 Acesso Vitalício ao Inventário</li>
+                </ul>
+                <a href="#" class="btn-primary" style="width:100%; margin-top: 30px; background: linear-gradient(90deg, var(--gold), #d4af37); color: black;">Quero Ser Premium</a>
+            </div>
+
+            <div class="package-card">
+                 <h3>Pacote Anual</h3>
+                <p style="font-size: 0.9rem;">Compromisso de longo prazo com desconto.</p>
+                <div class="price-box">
+                    <span class="currency">R$</span><span class="amount">7k</span><span>/ano</span>
+                </div>
+                 <p style="font-size: 0.8rem; color: var(--gold);">(Equivalente a R$ 583/mês)</p>
+                <ul class="package-features" style="margin-top: 20px;">
+                    <li>✅ Inclui tudo do Pacote Premium</li>
+                    <li>✅ Economia de 2 meses</li>
+                    <li>✅ Garantia Estendida de 30 dias</li>
+                </ul>
+                <a href="#" class="btn-secondary" style="width:100%; margin-top: 20px;">Garantir Anual</a>
+            </div>
+
         </div>
     </main>
     <script src="js/script.js"></script>
